@@ -1,0 +1,20 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Healthy Eatery</h1>
+    <p>Your journey to healthy and delicious home made recipes starts here!</p>
+    <a routerLink="/recipes" class="cta-button">Explore Recipes</a>
+  </div>
+</section>
+
+<!-- Featured Section -->
+<section class="featured">
+  <h2>Featured Recipes</h2>
+  <div class="recipe-grid">
+    <div class="recipe-card" *ngFor="let recipe of featuredRecipes">
+      <img [src]="recipe.image" alt="{{ recipe.title }}">
+      <h3>{{ recipe.title }}</h3>
+    </div>
+    
+  </div>
+</section>
